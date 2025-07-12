@@ -10,7 +10,7 @@ import { Contact } from "../components/sections/Contact";
 import {Education} from "../components/sections/Education";
 import {ExtrasAndInterests} from "../components/sections/ExtrasandInterests";
 import { ThemeToggle } from "../components/ThemeToggle";
-import { SpeedInsights } from "vercel/speed-insights/next";
+//import { SpeedInsights } from "";
 
 export default function Home() {
   return (
