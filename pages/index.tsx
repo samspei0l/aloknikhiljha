@@ -10,8 +10,8 @@ import { Contact } from "../components/sections/Contact";
 import {Education} from "../components/sections/Education";
 import {ExtrasAndInterests} from "../components/sections/ExtrasandInterests";
 import { ThemeToggle } from "../components/ThemeToggle";
-//import { SpeedInsights } from "";
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 export default function Home() {
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
@@ -64,6 +64,8 @@ export default function Home() {
           border-radius: 9999px;
         }
       `}</style>
+      <SpeedInsights />
+      <Analytics />
     </ThemeProvider>
   );
 }
